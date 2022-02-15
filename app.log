@@ -1,0 +1,337 @@
+2022-02-15 11:38:43.345  INFO 19696 --- [main] c.z.pma.ProjectManagementApplication     : Starting ProjectManagementApplication using Java 17 on Bigzee with PID 19696 (C:\Users\Zaw L Than\IdeaProjects\Project-Management\target\classes started by Zaw L Than in C:\Users\Zaw L Than\IdeaProjects\Project-Management)
+2022-02-15 11:38:43.369 DEBUG 19696 --- [main] c.z.pma.ProjectManagementApplication     : Running with Spring Boot v2.6.2, Spring v5.3.14
+2022-02-15 11:38:43.369  INFO 19696 --- [main] c.z.pma.ProjectManagementApplication     : The following profiles are active: dev
+2022-02-15 11:38:49.343  INFO 19696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-15 11:38:49.581  INFO 19696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 204 ms. Found 3 JPA repository interfaces.
+2022-02-15 11:38:52.888  INFO 19696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 11:38:53.251  INFO 19696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9420 ms
+2022-02-15 11:38:57.677  INFO 19696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-15 11:38:59.134  WARN 19696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-15 11:39:00.168  INFO 19696 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46ff1aad, org.springframework.security.web.context.SecurityContextPersistenceFilter@62159fd, org.springframework.security.web.header.HeaderWriterFilter@30811f91, org.springframework.security.web.authentication.logout.LogoutFilter@357cdb00, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f95158a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63c6c5e5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c2fea95, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2682cccc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62dfe152, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ed87ccf, org.springframework.security.web.session.SessionManagementFilter@6a7ea7c, org.springframework.security.web.access.ExceptionTranslationFilter@7ade62a6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59e4a044]
+2022-02-15 11:39:00.816  INFO 19696 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 11:39:01.472  INFO 19696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 11:39:01.487  INFO 19696 --- [main] c.z.pma.ProjectManagementApplication     : Started ProjectManagementApplication in 21.48 seconds (JVM running for 25.749)
+2022-02-15 11:39:32.580  INFO 19696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 11:39:32.587  INFO 19696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-02-15 11:39:32.726 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:39:32.728 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.HomeController.home () with arguments[s] = [{}]
+2022-02-15 11:39:32.730 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:39:34.218 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.HomeController.home () with arguments[s] = [{projects=[com.zawthan.pma.models.Project@16c3656a, com.zawthan.pma.models.Project@be536fb, com.zawthan.pma.models.Project@4c6998c, com.zawthan.pma.models.Project@7f5ccca, com.zawthan.pma.models.Project@7798d7de, com.zawthan.pma.models.Project@55687538, com.zawthan.pma.models.Project@65d28ce0], projectStatusCount=[{"value":4,"label":"COMPLETED"},{"value":2,"label":"NOTSTARTED"},{"value":1,"label":"INPROGRESS"}], employeeList=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3a94df2c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3f95ca2c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3f9285cb, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1db24857, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1439972, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1096e7dc, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3b8194d8, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@34fe930f]}]
+2022-02-15 11:39:34.219 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:39:35.241 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:39:35.241 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.AppErrorController.handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6203b085]]
+2022-02-15 11:39:35.242 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:39:35.244 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.AppErrorController.handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6203b085]]
+2022-02-15 11:39:35.245 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:39:50.150 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:39:50.151 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2022-02-15 11:39:50.154 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:39:50.161 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.zawthan.pma.models.Employee@3ca8a678, com.zawthan.pma.models.Employee@5b3e23ec, com.zawthan.pma.models.Employee@6abb13c4, com.zawthan.pma.models.Employee@18045541, com.zawthan.pma.models.Employee@6166bb5f, com.zawthan.pma.models.Employee@4b6dd5dc, com.zawthan.pma.models.Employee@79faca46, com.zawthan.pma.models.Employee@43ee2665]}]
+2022-02-15 11:39:50.162 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:06.546 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:40:06.547 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s] = [{}]
+2022-02-15 11:40:06.548 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:06.548 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s] = [{employee=com.zawthan.pma.models.Employee@6be96a88}]
+2022-02-15 11:40:06.549 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:36.138 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:40:36.140 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.createEmployee () with arguments[s] = [com.zawthan.pma.models.Employee@6311b141, org.springframework.validation.BeanPropertyBindingResult: 0 errors]
+2022-02-15 11:40:36.142 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:36.570 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.createEmployee () with arguments[s] = [com.zawthan.pma.models.Employee@6311b141, org.springframework.validation.BeanPropertyBindingResult: 0 errors]
+2022-02-15 11:40:36.571 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:36.662 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:40:36.663 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{}]
+2022-02-15 11:40:36.665 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:36.671 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.displayEmployees () with arguments[s] = [{employees=[com.zawthan.pma.models.Employee@308f3a97, com.zawthan.pma.models.Employee@62cd3d4d, com.zawthan.pma.models.Employee@5e4c967e, com.zawthan.pma.models.Employee@4cdbab31, com.zawthan.pma.models.Employee@5496bbf, com.zawthan.pma.models.Employee@25b3265c, com.zawthan.pma.models.Employee@6be9b5c6, com.zawthan.pma.models.Employee@4d62ecdc, com.zawthan.pma.models.Employee@7d7c8a7b]}]
+2022-02-15 11:40:36.672 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:44.424 DEBUG 19696 --- [http-nio-8080-exec-2] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:40:44.427 DEBUG 19696 --- [http-nio-8080-exec-2] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s] = [{}]
+2022-02-15 11:40:44.430 DEBUG 19696 --- [http-nio-8080-exec-2] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:44.430 DEBUG 19696 --- [http-nio-8080-exec-2] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.displayEmployeeForm () with arguments[s] = [{employee=com.zawthan.pma.models.Employee@720ae183}]
+2022-02-15 11:40:44.431 DEBUG 19696 --- [http-nio-8080-exec-2] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:45.858 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:40:45.859 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.createEmployee () with arguments[s] = [com.zawthan.pma.models.Employee@3001b5f5, org.springframework.validation.BeanPropertyBindingResult: 4 errors
+Field error in object 'employee' on field 'firstName': rejected value []; codes [NotBlank.employee.firstName,NotBlank.firstName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.firstName,firstName]; arguments []; default message [firstName]]; default message [Must give first name.]
+Field error in object 'employee' on field 'lastName': rejected value []; codes [Size.employee.lastName,Size.lastName,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.lastName,lastName]; arguments []; default message [lastName],50,1]; default message [size must be between 1 and 50]
+Field error in object 'employee' on field 'lastName': rejected value []; codes [NotBlank.employee.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.lastName,lastName]; arguments []; default message [lastName]]; default message [Must give a last name.]
+Field error in object 'employee' on field 'firstName': rejected value []; codes [Size.employee.firstName,Size.firstName,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.firstName,firstName]; arguments []; default message [firstName],50,2]; default message [size must be between 2 and 50]]
+2022-02-15 11:40:45.859 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:45.860 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.EmployeeController.createEmployee () with arguments[s] = [com.zawthan.pma.models.Employee@3001b5f5, org.springframework.validation.BeanPropertyBindingResult: 4 errors
+Field error in object 'employee' on field 'firstName': rejected value []; codes [NotBlank.employee.firstName,NotBlank.firstName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.firstName,firstName]; arguments []; default message [firstName]]; default message [Must give first name.]
+Field error in object 'employee' on field 'lastName': rejected value []; codes [Size.employee.lastName,Size.lastName,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.lastName,lastName]; arguments []; default message [lastName],50,1]; default message [size must be between 1 and 50]
+Field error in object 'employee' on field 'lastName': rejected value []; codes [NotBlank.employee.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.lastName,lastName]; arguments []; default message [lastName]]; default message [Must give a last name.]
+Field error in object 'employee' on field 'firstName': rejected value []; codes [Size.employee.firstName,Size.firstName,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.firstName,firstName]; arguments []; default message [firstName],50,2]; default message [size must be between 2 and 50]]
+2022-02-15 11:40:45.860 DEBUG 19696 --- [http-nio-8080-exec-3] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:52.956 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:40:52.957 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{}]
+2022-02-15 11:40:52.959 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:52.969 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{projects=[com.zawthan.pma.models.Project@486b5b6, com.zawthan.pma.models.Project@4aa854a4, com.zawthan.pma.models.Project@394ab539, com.zawthan.pma.models.Project@7e558ec1, com.zawthan.pma.models.Project@4fcfafb8, com.zawthan.pma.models.Project@474acf91, com.zawthan.pma.models.Project@2b45593c]}]
+2022-02-15 11:40:52.970 DEBUG 19696 --- [http-nio-8080-exec-4] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:54.825 DEBUG 19696 --- [http-nio-8080-exec-5] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:40:54.826 DEBUG 19696 --- [http-nio-8080-exec-5] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.displayProjectForm () with arguments[s] = [{}]
+2022-02-15 11:40:54.826 DEBUG 19696 --- [http-nio-8080-exec-5] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:40:54.836 DEBUG 19696 --- [http-nio-8080-exec-5] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.displayProjectForm () with arguments[s] = [{project=com.zawthan.pma.models.Project@1f30a2f1, employees=[com.zawthan.pma.models.Employee@476a3867, com.zawthan.pma.models.Employee@4d293f2c, com.zawthan.pma.models.Employee@2ccc48e1, com.zawthan.pma.models.Employee@1d7c2e2, com.zawthan.pma.models.Employee@17686bbf, com.zawthan.pma.models.Employee@133ce621, com.zawthan.pma.models.Employee@5d793fe7, com.zawthan.pma.models.Employee@62062678, com.zawthan.pma.models.Employee@36679c14]}]
+2022-02-15 11:40:54.837 DEBUG 19696 --- [http-nio-8080-exec-5] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:42:27.324 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:42:27.324 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.createProject () with arguments[s] = [com.zawthan.pma.models.Project@57c267c8, org.springframework.validation.BeanPropertyBindingResult: 0 errors]
+2022-02-15 11:42:27.324 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:42:27.446 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.createProject () with arguments[s] = [com.zawthan.pma.models.Project@57c267c8, org.springframework.validation.BeanPropertyBindingResult: 0 errors]
+2022-02-15 11:42:27.447 DEBUG 19696 --- [http-nio-8080-exec-8] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:42:27.465 DEBUG 19696 --- [http-nio-8080-exec-9] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:42:27.469 DEBUG 19696 --- [http-nio-8080-exec-9] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{}]
+2022-02-15 11:42:27.473 DEBUG 19696 --- [http-nio-8080-exec-9] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:42:27.489 DEBUG 19696 --- [http-nio-8080-exec-9] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.displayProjects () with arguments[s] = [{projects=[com.zawthan.pma.models.Project@1b63314b, com.zawthan.pma.models.Project@11c90e3, com.zawthan.pma.models.Project@2ab2ae0b, com.zawthan.pma.models.Project@79275102, com.zawthan.pma.models.Project@7b4cce04, com.zawthan.pma.models.Project@1e32d206, com.zawthan.pma.models.Project@214ff53d, com.zawthan.pma.models.Project@62231f57]}]
+2022-02-15 11:42:27.489 DEBUG 19696 --- [http-nio-8080-exec-9] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:42:29.821 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:42:29.821 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.displayProjectForm () with arguments[s] = [{}]
+2022-02-15 11:42:29.822 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:42:29.827 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.displayProjectForm () with arguments[s] = [{project=com.zawthan.pma.models.Project@4428235d, employees=[com.zawthan.pma.models.Employee@1eb8ecc6, com.zawthan.pma.models.Employee@396583d7, com.zawthan.pma.models.Employee@8648740, com.zawthan.pma.models.Employee@65c905ea, com.zawthan.pma.models.Employee@3cce0b49, com.zawthan.pma.models.Employee@29205c3c, com.zawthan.pma.models.Employee@55280df, com.zawthan.pma.models.Employee@289933ca, com.zawthan.pma.models.Employee@64c1e1d3]}]
+2022-02-15 11:42:29.827 DEBUG 19696 --- [http-nio-8080-exec-10] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:42:31.099 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ 
+
+2022-02-15 11:42:31.100 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** Before Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.createProject () with arguments[s] = [com.zawthan.pma.models.Project@443fc716, org.springframework.validation.BeanPropertyBindingResult: 3 errors
+Field error in object 'project' on field 'name': rejected value []; codes [NotBlank.project.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [project.name,name]; arguments []; default message [name]]; default message [Must give Project Name]
+Field error in object 'project' on field 'description': rejected value []; codes [NotBlank.project.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [project.description,description]; arguments []; default message [description]]; default message [Must descripte project]
+Field error in object 'project' on field 'description': rejected value []; codes [Size.project.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [project.description,description]; arguments []; default message [description],100,3]; default message [size must be between 3 and 100]]
+2022-02-15 11:42:31.100 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+
+2022-02-15 11:42:31.100 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  : 
+ 
+ ************** After Method Execution ***************** 
+ com.zawthan.pma.controllers.ProjectController.createProject () with arguments[s] = [com.zawthan.pma.models.Project@443fc716, org.springframework.validation.BeanPropertyBindingResult: 3 errors
+Field error in object 'project' on field 'name': rejected value []; codes [NotBlank.project.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [project.name,name]; arguments []; default message [name]]; default message [Must give Project Name]
+Field error in object 'project' on field 'description': rejected value []; codes [NotBlank.project.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [project.description,description]; arguments []; default message [description]]; default message [Must descripte project]
+Field error in object 'project' on field 'description': rejected value []; codes [Size.project.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [project.description,description]; arguments []; default message [description],100,3]; default message [size must be between 3 and 100]]
+2022-02-15 11:42:31.101 DEBUG 19696 --- [http-nio-8080-exec-1] c.z.pma.logging.ApplicationLoggerAspect  :  
+ ______________________________________________ 
+ 
+ 
+

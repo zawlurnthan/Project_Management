@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: header">
+    <title>Employee Form</title>
+</head>
+
+<body>
+
+    <nav th:replace="layout :: navbar"></nav>
+
+    <br>
+    <div class="container w-25">
+        <h3>Enter New Employee</h3><br>
+
+        <form th:action="@{/employees/save}" th:object="${employee}" method="post">
+
+            <!-- employee id will be used to update row when it click -->
+            <input type="hidden" th:field="${employee.employeeId}" />
+            <input class="form-control" type="text" placeholder="First Name" th:field="${employee.firstName}" />
+            <span style="color: red" th:if="${#fields.hasErrors('firstName')}" th:errors="${employee.firstName}"></span><br>
+
+            <input class="form-control" type="text" placeholder="Last Name" th:field="${employee.lastName}" />
+            <span style="color: red" th:if="${#fields.hasErrors('lastName')}" th:errors="${employee.lastName}"></span><br>
+
+            <input class="form-control" type="text" placeholder="Email" th:field="${employee.email}" />
+            <span style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="${employee.email}"></span><br>
+
+            <button class="btn btn-primary" type="submit">Create Employee</button>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: header"></head>
+
+<body>
+
+    <nav th:replace="layout :: navbar"></nav>
+
+    <br>
+    <div class="container w-50">
+        <h3>Enter New Project</h3><br>
+
+        <form th:action="@{/projects/save}" th:object="${project}" method="post">
+
+            <!-- project id will be used to update row when it click -->
+            <input type="hidden" th:field="${project.projectId}"/>
+            <input class="form-control" type="text" placeholder="Project Name" th:field="${project.name}" />
+            <span style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="${project.name}"></span><br>
+
+            <select class="form-select" th:field="${project.stage}">
+                <option th:value="NOTSTARTED">Not Started</option>
+                <option th:value="INPROGRESS">In Progress</option>
+                <option th:value="COMPLETED">Completed</option>
+            </select>
+            <span style="color: red" th:if="${#fields.hasErrors('stage')}" th:errors="${project.stage}"></span><br>
+
+            <select class="form-select" th:field="*{employees}" multiple="multiple">
+                <option th:each="employee : ${employees}"
+                        th:value="${employee.employeeId}"
+                        th:text="${employee.firstName}">
+                </option>
+            </select>
+            <span style="color: red" th:if="${#fields.hasErrors('employees')}" th:errors="${project.employees}"></span><br>
+
+            <textarea class="form-control" type="text" placeholder="Enter Project Description" th:field="${project.description}"></textarea>
+            <span style="color: red" th:if="${#fields.hasErrors('description')}" th:errors="${project.description}"></span><br>
+
+            <button class="btn btn-primary" type="submit">Create Project</button>
+        </form>
+    </div>
+</body>
+</html>
